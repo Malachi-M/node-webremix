@@ -24,11 +24,12 @@ Output becomes:
 
 ## Video size options
 
-If you want to pass in a different width and height for Youtube/Vimeo/Rdio, pass in the following:
+If you want to pass in a different width and height for Youtube/Vimeo/Rdio or set a particular start time for youtube videos, pass in the following:
 
     var options = {
         width: 500,
-        height: 200
+        height: 200,
+        startTime: 29
     };
 
     remix.generate('https://www.youtube.com/watch?v=XYc6ZiV07ZE', options, function(err, resp) {
